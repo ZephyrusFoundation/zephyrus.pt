@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import type {Strategies} from "@nuxtjs/i18n";
+
 const DOMAINS = {
   pt: 'zephyrus.pt',
   en: 'zephyrusprosperity.com',
@@ -101,8 +103,8 @@ export default defineNuxtConfig({
   },
   i18n: {
     baseUrl: DOMAINS.en,
-    multiDomainLocales: (process.env.NODE_ENV === 'production'),
-    strategy: (process.env.NODE_ENV === 'production') ? 'prefix_except_default' : 'prefix',
+    multiDomainLocales: process.env.MULTILANG_DOMAINS_I18N?.toLocaleLowerCase() === 'true',
+    strategy: process.env.I18N_STRATEGY?.toLocaleLowerCase() as Strategies|undefined || 'prefix_except_default',
     langDir: 'locales/',
     locales: [
       {
