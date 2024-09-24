@@ -1,4 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+const DOMAINS = {
+  pt: 'zephyrus.pt',
+  en: 'zephyrusprosperity.com',
+  br: 'zephyrusprosperity.com',
+  es: 'zephyrusprosperity.com',
+  fr: 'zephyrusprosperity.com',
+};
+
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   ssr: false,
@@ -73,7 +81,12 @@ export default defineNuxtConfig({
     }
   },
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/seo'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/image',
+    '@nuxtjs/seo',
+    '@nuxtjs/i18n'
+  ],
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
   },
@@ -85,5 +98,34 @@ export default defineNuxtConfig({
   },
   seo: {
     automaticDefaults: true,
+  },
+  i18n: {
+    differentDomains: (process.env.NODE_ENV === 'production'),
+    strategy: (process.env.NODE_ENV === 'production') ? 'prefix_except_default' : 'prefix',
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        domain: DOMAINS.en,
+        domainDefault: true,
+      },
+      {
+        code: 'pt',
+        iso: 'pt-PT',
+        domain: DOMAINS.pt,
+        domainDefault: true,
+      },
+      {
+        code: 'br',
+        iso: 'pt-BR',
+        domain: DOMAINS.br,
+      },
+      {
+        code: 'es',
+        iso: 'es-ES',
+        domain: DOMAINS.es,
+      },
+    ],
+    defaultLocale: 'en',
   }
 })
