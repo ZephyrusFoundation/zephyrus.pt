@@ -135,6 +135,7 @@ export default defineNuxtConfig({
     ],
     detectBrowserLanguage: {
       useCookie: true,
+      alwaysRedirect: true,
       cookieCrossOrigin: true,
       cookieKey: 'zephyrus_i18n_redirected',
       redirectOn: 'root',
