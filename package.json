@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@dargmuesli/nuxt-cookie-control": "^8.4.12",
     "@nuxt/content": "^2.13.2",
     "@nuxt/image": "^1.8.0",
     "@nuxtjs/i18n": "^8.5.5",

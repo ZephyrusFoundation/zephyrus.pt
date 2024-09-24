@@ -82,7 +82,14 @@ export default defineNuxtConfig({
     }
   },
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/seo', '@nuxt/content', '@nuxtjs/i18n'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/image',
+    '@nuxtjs/seo',
+    '@nuxt/content',
+    '@nuxtjs/i18n',
+    '@dargmuesli/nuxt-cookie-control',
+  ],
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
   },
@@ -143,5 +150,74 @@ export default defineNuxtConfig({
       fallbackLocale: 'en',
     },
     defaultLocale: 'en',
+  },
+  cookieControl: {
+    barPosition: 'bottom-right',
+    closeModalOnClickOutside: false,
+    cookies: {
+      necessary: [
+        {
+          description: {
+            en: 'This cookie stores the cookies consent preferences.',
+            es: 'Esta cookie almacena las preferencias de consentimiento de cookies.',
+            nl: 'Deze cookie slaat de cookievoorkeuren op.',
+            pt: 'Este cookie armazena as preferências de consentimento de cookies.',
+          },
+          id: 'zephyrus_ncc_c',
+          name: {
+            en: 'Cookie Consent Preferences',
+            es: 'Preferencias de consentimiento de cookies',
+            nl: 'Cookievoorkeuren',
+            pt: 'Preferências de consentimento de cookies',
+          },
+          targetCookieIds: ['zephyrus_ncc_c'],
+        },
+        {
+          description: {
+            en: 'This cookie stores the cookies enabled preferences.',
+            es: 'Esta cookie almacena las preferencias de cookies habilitadas.',
+            nl: 'Deze cookie slaat de ingeschakelde cookievoorkeuren op.',
+            pt: 'Este cookie armazena as preferências de cookies habilitadas.',
+          },
+          id: 'zephyrus_ncc_e',
+          name: {
+            en: 'Cookie Enabled Preferences',
+            es: 'Preferencias de cookies habilitadas',
+            nl: 'Ingeschakelde cookievoorkeuren',
+            pt: 'Preferências de cookies habilitadas',
+          },
+          targetCookieIds: ['zephyrus_ncc_e'],
+        }
+      ],
+      optional: [
+        {
+          description: {
+            en: 'This cookie stores the cookies enabled preferences.',
+            es: 'Esta cookie almacena las preferencias de cookies habilitadas.',
+            nl: 'Deze cookie slaat de ingeschakelde cookievoorkeuren op.',
+            pt: 'Este cookie armazena as preferências de cookies habilitadas.',
+          },
+          isPreselected: true,
+          id: 'zephyrus_i18n_redirected',
+          name: {
+            en: 'Cookie Enabled Preferences',
+            es: 'Preferencias de cookies habilitadas',
+            nl: 'Ingeschakelde cookievoorkeuren',
+            pt: 'Preferências de cookies habilitadas',
+          },
+          targetCookieIds: ['zephyrus_i18n_redirected'],
+        }
+
+      ],
+    },
+    cookieNameIsConsentGiven: 'zephyrus_ncc_c',
+    cookieNameCookiesEnabledIds: 'zephyrus_ncc_e',
+    isControlButtonEnabled: false,
+    locales: [
+      'en',
+      'es',
+      'nl',
+      'pt',
+    ],
   },
 })
