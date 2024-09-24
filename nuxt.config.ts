@@ -92,6 +92,8 @@ export default defineNuxtConfig({
     description: 'Welcome to my awesome site!',
     defaultLocale: 'en',
   },
+  ogImage: { enabled: false },
+  schemaOrg: { enabled: false },
   seo: {
     automaticDefaults: true,
   },
@@ -104,6 +106,7 @@ export default defineNuxtConfig({
       {
         code: 'en',
         iso: 'en-US',
+        language: 'en-US',
         file: 'en-US.json',
         domain: DOMAINS.en,
         domainDefault: true,
@@ -111,6 +114,7 @@ export default defineNuxtConfig({
       {
         code: 'pt',
         iso: 'pt-PT',
+        language: 'pt-PT',
         file: 'pt-PT.json',
         domain: DOMAINS.pt,
         domainDefault: true,
@@ -118,14 +122,16 @@ export default defineNuxtConfig({
       {
         code: 'es',
         iso: 'es-ES',
+        language: 'es-ES',
         file: 'es-ES.json',
         domain: DOMAINS.es,
       },
       {
-          code: 'nl',
-          iso: 'nl-NL',
-          file: 'nl-NL.json',
-          domain: DOMAINS.nl,
+        code: 'nl',
+        iso: 'nl-NL',
+        language: 'nl-NL',
+        file: 'nl-NL.json',
+        domain: DOMAINS.nl,
       },
     ],
     detectBrowserLanguage: {
@@ -134,6 +140,7 @@ export default defineNuxtConfig({
       cookieCrossOrigin: true,
       cookieKey: 'zephyrus_i18n_redirected',
       redirectOn: 'root',
+      fallbackLocale: 'en',
     },
     defaultLocale: 'en',
   },
