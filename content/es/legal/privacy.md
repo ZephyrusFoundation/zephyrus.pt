@@ -114,12 +114,12 @@ El sitio utiliza dos tipos de cookies:
 ::list
 ---
 items:
-- id: 1
-title: "Cookie de idioma"
-description: "Almacenado en el navegador para garantizar que el contenido se muestre en el idioma preferido."
-- id: 2
-title: "Cookie de consentimiento de cookies"
-description: "Para recordar si el usuario ya ha consentido el uso de cookies."
+    - id: 1
+      title: "Cookie de idioma"
+      description: "Almacenado en el navegador para garantizar que el contenido se muestre en el idioma preferido."
+    - id: 2
+      title: "Cookie de consentimiento de cookies"
+      description: "Para recordar si el usuario ya ha consentido el uso de cookies."
 ---
 ::
 
