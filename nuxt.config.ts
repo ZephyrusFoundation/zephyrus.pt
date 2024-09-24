@@ -4,7 +4,8 @@ import type {Strategies} from "@nuxtjs/i18n";
 const DOMAINS = {
   pt: 'zephyrus.pt',
   en: 'zephyrusprosperity.com',
-  es: 'zephyrusprosperity.com'
+  es: 'zephyrusprosperity.com',
+  nl: 'zephyrusprosperity.com',
 };
 
 export default defineNuxtConfig({
@@ -124,8 +125,13 @@ export default defineNuxtConfig({
         iso: 'es-ES',
         file: 'es-ES.json',
         domain: DOMAINS.es,
-        domainDefault: true,
-      }
+      },
+      {
+          code: 'nl',
+          iso: 'nl-NL',
+          file: 'nl-NL.json',
+          domain: DOMAINS.nl,
+      },
     ],
     detectBrowserLanguage: {
       useCookie: true,
