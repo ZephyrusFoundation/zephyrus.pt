@@ -82,12 +82,7 @@ export default defineNuxtConfig({
     }
   },
   devtools: { enabled: true },
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxt/image',
-    '@nuxtjs/seo',
-    '@nuxtjs/i18n'
-  ],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/seo', '@nuxt/content', '@nuxtjs/i18n'],
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
   },
@@ -141,5 +136,5 @@ export default defineNuxtConfig({
       redirectOn: 'root',
     },
     defaultLocale: 'en',
-  }
+  },
 })

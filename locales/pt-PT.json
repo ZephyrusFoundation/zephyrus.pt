@@ -1,3 +1,8 @@
 {
-  "welcome": "Bem-vindo a aplicação"
+  "welcome": "Bem-vindo a aplicação",
+  "legal": {
+    "title": "Documentos Legais",
+    "subtitle": "Consulte as nossas políticas de privacidade, termos de uso e outros documentos essenciais.",
+    "readMore": "Leia mais"
+  }
 }

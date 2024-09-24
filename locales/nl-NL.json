@@ -1,3 +1,8 @@
 {
-  "welcome": "Welkom bij de applicatie"
+  "welcome": "Welkom bij de applicatie",
+  "legal": {
+    "title": "Juridische Documenten",
+    "subtitle": "Raadpleeg ons privacybeleid, onze gebruiksvoorwaarden en andere essentiële documenten.",
+    "readMore": "Lees meer"
+  }
 }
