@@ -4,5 +4,11 @@
     "title": "Juridische Documenten",
     "subtitle": "Raadpleeg ons privacybeleid, onze gebruiksvoorwaarden en andere essentiële documenten.",
     "readMore": "Lees meer"
+  },
+  "footer": {
+    "copyright": "Copyright © { year } { name }. Alle rechten voorbehouden.",
+    "termsOfUse": "Gebruiksvoorwaarden",
+    "cookiesPolicy": "Cookiebeleid",
+    "privacyPolicy": "Privacybeleid"
   }
 }

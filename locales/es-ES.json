@@ -4,5 +4,11 @@
     "title": "Documentos Legales",
     "subtitle": "Consulte nuestras políticas de privacidad, términos de uso y otros documentos esenciales.",
     "readMore": "Leer más"
+  },
+  "footer": {
+    "copyright": "Copyright © { year } { name }. Todos los derechos reservados.",
+    "termsOfUse": "Términos de Uso",
+    "cookiesPolicy": "Política de Cookies",
+    "privacyPolicy": "Política de Privacidad"
   }
 }
