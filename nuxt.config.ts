@@ -4,9 +4,7 @@ import type {Strategies} from "@nuxtjs/i18n";
 const DOMAINS = {
   pt: 'zephyrus.pt',
   en: 'zephyrusprosperity.com',
-  br: 'zephyrusprosperity.com',
-  es: 'zephyrusprosperity.com',
-  fr: 'zephyrusprosperity.com',
+  es: 'zephyrusprosperity.com'
 };
 
 export default defineNuxtConfig({
@@ -103,7 +101,7 @@ export default defineNuxtConfig({
   },
   i18n: {
     baseUrl: DOMAINS.en,
-    multiDomainLocales: process.env.MULTILANG_DOMAINS_I18N?.toLocaleLowerCase() === 'true',
+    differentDomains: process.env.I18N_DOMAINS?.toLocaleLowerCase() === 'true',
     strategy: process.env.I18N_STRATEGY?.toLocaleLowerCase() as Strategies|undefined || 'prefix_except_default',
     langDir: 'locales/',
     locales: [
@@ -122,17 +120,12 @@ export default defineNuxtConfig({
         domainDefault: true,
       },
       {
-        code: 'br',
-        iso: 'pt-BR',
-        file: 'pt-BR.json',
-        domain: DOMAINS.br,
-      },
-      {
         code: 'es',
         iso: 'es-ES',
         file: 'es-ES.json',
         domain: DOMAINS.es,
-      },
+        domainDefault: true,
+      }
     ],
     detectBrowserLanguage: {
       useCookie: true,
