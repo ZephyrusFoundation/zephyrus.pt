@@ -17,3 +17,7 @@ Av. Fontes Pereira de Melo 16, 1050-121 Lisboa, Portugal
 
 **Forma Jurídica:**  
 Sociedad de responsabilidad limitada (Lda)
+
+::timestamp
+Última actualización: 24 de septiembre de 2024, 19:00 (hora de Lisboa)
+::

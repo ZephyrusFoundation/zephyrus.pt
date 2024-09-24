@@ -17,3 +17,7 @@ Av. Fontes Pereira de Melo 16, 1050-121 Lisbon, Portugal
 
 **Legal Form:**  
 Limited Liability Company (Lda)
+
+::timestamp
+Last updated: September 24, 2024, 19:00 (Lisbon time)
+::

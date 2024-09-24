@@ -17,3 +17,7 @@ Av. Fontes Pereira de Melo 16, 1050-121 Lissabon, Portugal
 
 **Rechtsvorm:**  
 Vennootschap met beperkte aansprakelijkheid (Lda)
+
+::timestamp
+Laatst bijgewerkt: 24 september 2024, 19:00 (Lissabon tijd)
+::
