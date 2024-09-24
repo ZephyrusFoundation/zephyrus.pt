@@ -100,32 +100,44 @@ export default defineNuxtConfig({
     automaticDefaults: true,
   },
   i18n: {
-    differentDomains: (process.env.NODE_ENV === 'production'),
+    baseUrl: DOMAINS.en,
+    multiDomainLocales: (process.env.NODE_ENV === 'production'),
     strategy: (process.env.NODE_ENV === 'production') ? 'prefix_except_default' : 'prefix',
+    langDir: 'locales/',
     locales: [
       {
         code: 'en',
         iso: 'en-US',
+        file: 'en-US.json',
         domain: DOMAINS.en,
         domainDefault: true,
       },
       {
         code: 'pt',
         iso: 'pt-PT',
+        file: 'pt-PT.json',
         domain: DOMAINS.pt,
         domainDefault: true,
       },
       {
         code: 'br',
         iso: 'pt-BR',
+        file: 'pt-BR.json',
         domain: DOMAINS.br,
       },
       {
         code: 'es',
         iso: 'es-ES',
+        file: 'es-ES.json',
         domain: DOMAINS.es,
       },
     ],
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieCrossOrigin: true,
+      cookieKey: 'zephyrus_i18n_redirected',
+      redirectOn: 'root',
+    },
     defaultLocale: 'en',
   }
 })

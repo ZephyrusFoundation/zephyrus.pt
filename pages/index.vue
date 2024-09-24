@@ -1,10 +1,10 @@
 <script setup lang="ts">
-
+const { t } = useI18n();
 </script>
 
 <template>
   <div>
-    <h1>Home Page</h1>
+    <h1>{{ t('welcome') }}</h1>
   </div>
 </template>
 
