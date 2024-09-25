@@ -27,7 +27,7 @@ const pages = usePages();
           </a>
         </div>
         <li v-for="page in pages" :key="page.path">
-          <a :href="localePath(page.path)" class="btn w-full" v-if="!page.hide && page.showMenu">
+          <a :href="localePath(page.path)" class="btn w-full" v-if="!page.hide && !page.hideMenu">
             {{ page.name }}
           </a>
         </li>
