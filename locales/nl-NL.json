@@ -1,5 +1,14 @@
 {
   "welcome": "Welkom bij de applicatie",
+  "page": {
+    "home": "Home",
+    "legal": "Juridisch",
+    "company": "Bedrijfsinformatie",
+    "cookies": "Cookiebeleid",
+    "privacy": "Privacybeleid",
+    "tos": "Servicevoorwaarden",
+    "404": "Pagina niet gevonden"
+  },
   "legal": {
     "title": "Juridische Documenten",
     "subtitle": "Raadpleeg ons privacybeleid, onze gebruiksvoorwaarden en andere essentiële documenten.",
@@ -10,5 +19,9 @@
     "termsOfUse": "Gebruiksvoorwaarden",
     "cookiesPolicy": "Cookiebeleid",
     "privacyPolicy": "Privacybeleid"
+  },
+  "search": {
+    "title": "Zoeken",
+    "placeholder": "Typ om te zoeken..."
   }
 }

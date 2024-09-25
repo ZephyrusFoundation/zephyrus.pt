@@ -1,5 +1,14 @@
 {
   "welcome": "Welcome to the App",
+  "page": {
+    "home": "Home",
+    "legal": "Legal",
+    "company": "Company Information",
+    "cookies": "Cookies Policy",
+    "privacy": "Privacy Policy",
+    "tos": "Terms of Service",
+    "404": "Page not found"
+  },
   "legal": {
     "title": "Legal Documents",
     "subtitle": "Consult our privacy policies, terms of service, and other essential documents.",
@@ -10,5 +19,9 @@
     "termsOfUse": "Terms of Use",
     "cookiesPolicy": "Cookies Policy",
     "privacyPolicy": "Privacy Policy"
+  },
+  "search": {
+    "title": "Search",
+    "placeholder": "Type to search..."
   }
 }

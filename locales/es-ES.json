@@ -1,5 +1,14 @@
 {
   "welcome": "Bienvenido a la aplicación",
+  "page": {
+    "home": "Inicio",
+    "legal": "Legal",
+    "company": "Información de la Empresa",
+    "cookies": "Política de Cookies",
+    "privacy": "Política de Privacidad",
+    "tos": "Términos de Servicio",
+    "404": "Página no encontrada"
+  },
   "legal": {
     "title": "Documentos Legales",
     "subtitle": "Consulte nuestras políticas de privacidad, términos de uso y otros documentos esenciales.",
@@ -10,5 +19,9 @@
     "termsOfUse": "Términos de Uso",
     "cookiesPolicy": "Política de Cookies",
     "privacyPolicy": "Política de Privacidad"
+  },
+  "search": {
+    "title": "Buscar",
+    "placeholder": "Escriba para buscar..."
   }
 }
