@@ -11,9 +11,7 @@ const pages = usePages();
     <input id="zephyrus-drawer" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col">
       <AppTheMenu />
-      <main>
-        <slot />
-      </main>
+      <slot />
       <AppTheFooter />
     </div>
     <div class="drawer-side">

@@ -3,7 +3,7 @@ const localePath = useLocalePath();
 </script>
 
 <template>
-  <nav class="bg-base-200 shadow-lg sticky top-0">
+  <nav class="bg-base-200 shadow-lg sticky top-0 z-[99]">
     <div class="navbar container mx-auto">
       <div class="navbar-start">
         <label for="zephyrus-drawer" aria-label="open sidebar" class="btn btn-circle bg-base-300">
