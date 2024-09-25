@@ -5,6 +5,7 @@ const { t } = useI18n();
 <template>
   <main>
     <HeroMain />
+    <CarouselLogos />
   </main>
 </template>
 

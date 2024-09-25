@@ -17,6 +17,7 @@
     "@nuxtjs/seo": "^2.0.0-rc.21",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "nuxt": "^3.13.2",
+    "nuxt-swiper": "^1.2.2",
     "vue": "latest",
     "vue-router": "latest"
   },
