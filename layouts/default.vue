@@ -14,9 +14,9 @@ const pages = usePages();
       <slot />
       <AppTheFooter />
     </div>
-    <div class="drawer-side">
+    <div class="drawer-side z-[99]">
       <label for="zephyrus-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-      <ul class="bg-base-200 min-h-full w-5/6 md:w-1/3 p-4">
+      <ul class="bg-base-200 shadow-2xl min-h-full w-5/6 md:w-1/3 p-4">
         <div class="text-center">
           <a :href="localePath('/')" class="avatar w-16 h-16">
             <div class="w-full h-full rounded">
