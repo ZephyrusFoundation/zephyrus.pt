@@ -29,6 +29,7 @@ const localePath = useLocalePath();
         </a>
       </div>
       <div class="navbar-end">
+        <DropdownLanguages />
         <ModalSearchInput />
       </div>
     </div>

@@ -1,5 +1,8 @@
 <script setup lang="ts">
-const { t } = useI18n();
+useHeadSafe({
+  title: 'Zephyrus Prosperity',
+  titleTemplate: '%s',
+})
 </script>
 
 <template>

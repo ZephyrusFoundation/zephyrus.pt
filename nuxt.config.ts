@@ -108,38 +108,34 @@ export default defineNuxtConfig({
   i18n: {
     baseUrl: DOMAINS.en,
     differentDomains: process.env.I18N_DOMAINS?.toLocaleLowerCase() === 'true',
-    strategy: process.env.I18N_STRATEGY?.toLocaleLowerCase() as Strategies|undefined || 'prefix_except_default',
+    strategy: process.env.I18N_STRATEGY?.toLocaleLowerCase() as Strategies|undefined || 'prefix_and_default',
     langDir: 'locales/',
     locales: [
       {
         code: 'en',
-        iso: 'en-US',
         language: 'en-US',
         file: 'en-US.json',
         domain: DOMAINS.en,
         domainDefault: true,
       },
       {
-        code: 'pt',
-        iso: 'pt-PT',
-        language: 'pt-PT',
-        file: 'pt-PT.json',
-        domain: DOMAINS.pt,
-        domainDefault: true,
-      },
-      {
         code: 'es',
-        iso: 'es-ES',
         language: 'es-ES',
         file: 'es-ES.json',
         domain: DOMAINS.es,
       },
       {
         code: 'nl',
-        iso: 'nl-NL',
         language: 'nl-NL',
         file: 'nl-NL.json',
         domain: DOMAINS.nl,
+      },
+      {
+        code: 'pt',
+        language: 'pt-PT',
+        file: 'pt-PT.json',
+        domain: DOMAINS.pt,
+        domainDefault: true,
       },
     ],
     detectBrowserLanguage: {
