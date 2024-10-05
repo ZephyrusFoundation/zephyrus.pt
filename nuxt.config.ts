@@ -113,6 +113,8 @@ export default defineNuxtConfig({
     locales: [
       {
         code: 'en',
+        name: 'English',
+        country: 'us',
         language: 'en-US',
         file: 'en-US.json',
         domain: DOMAINS.en,
@@ -120,18 +122,24 @@ export default defineNuxtConfig({
       },
       {
         code: 'es',
+        name: 'Español',
+        country: 'es',
         language: 'es-ES',
         file: 'es-ES.json',
         domain: DOMAINS.es,
       },
       {
         code: 'nl',
+        name: 'Nederlands',
+        country: 'nl',
         language: 'nl-NL',
         file: 'nl-NL.json',
         domain: DOMAINS.nl,
       },
       {
         code: 'pt',
+        name: 'Português',
+        country: 'pt',
         language: 'pt-PT',
         file: 'pt-PT.json',
         domain: DOMAINS.pt,

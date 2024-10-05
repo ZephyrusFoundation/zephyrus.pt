@@ -1,4 +1,7 @@
 {
+  "app": {
+    "language": "English"
+  },
   "welcome": "Welcome to the App",
   "page": {
     "home": "Home",

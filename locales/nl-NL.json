@@ -1,4 +1,7 @@
 {
+  "app": {
+    "language": "Nederlands"
+  },
   "welcome": "Welkom bij de applicatie",
   "page": {
     "home": "Home",
