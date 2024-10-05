@@ -1,13 +1,14 @@
 <script setup lang="ts">
-const { locale, locales, setLocale } = useI18n()
+const { locale, locales, setLocale } = useI18n();
+const switchLocalePath = useSwitchLocalePath();
 
 const availableLocales = computed(() => {
   return locales.value.filter(i => i.code !== locale.value)
-})
+});
 
 const getLocale = (code: string) => {
   return locales.value.find((loc) => loc.code === code)
-}
+};
 </script>
 
 <template>
@@ -17,10 +18,10 @@ const getLocale = (code: string) => {
     </div>
     <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
       <li v-for="locale in availableLocales" :key="locale.code">
-        <a @click.prevent.stop="setLocale(locale.code)">
+        <NuxtLink :to="switchLocalePath(locale.code)">
           <IconFlagsGetFlag :code="getLocale(locale.code).country" classes="w-full h-3" />
           <span>{{ locale.name }}</span>
-        </a>
+        </NuxtLink>
       </li>
     </ul>
   </div>
