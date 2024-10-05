@@ -1,13 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import type {Strategies} from "@nuxtjs/i18n";
 
-const DOMAINS = {
-  pt: 'zephyrus.pt',
-  en: 'zephyrusprosperity.com',
-  es: 'zephyrusprosperity.com',
-  nl: 'zephyrusprosperity.com',
-};
-
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   ssr: false,
@@ -106,8 +99,7 @@ export default defineNuxtConfig({
     automaticDefaults: true,
   },
   i18n: {
-    baseUrl: DOMAINS.en,
-    differentDomains: process.env.I18N_DOMAINS?.toLocaleLowerCase() === 'true',
+    baseUrl: process.env.BASE_URL,
     strategy: process.env.I18N_STRATEGY?.toLocaleLowerCase() as Strategies|undefined || 'prefix_and_default',
     langDir: 'locales/',
     locales: [
@@ -117,8 +109,6 @@ export default defineNuxtConfig({
         country: 'us',
         language: 'en-US',
         file: 'en-US.json',
-        domain: DOMAINS.en,
-        domainDefault: true,
       },
       {
         code: 'es',
@@ -126,7 +116,6 @@ export default defineNuxtConfig({
         country: 'es',
         language: 'es-ES',
         file: 'es-ES.json',
-        domain: DOMAINS.es,
       },
       {
         code: 'nl',
@@ -134,7 +123,6 @@ export default defineNuxtConfig({
         country: 'nl',
         language: 'nl-NL',
         file: 'nl-NL.json',
-        domain: DOMAINS.nl,
       },
       {
         code: 'pt',
@@ -142,8 +130,6 @@ export default defineNuxtConfig({
         country: 'pt',
         language: 'pt-PT',
         file: 'pt-PT.json',
-        domain: DOMAINS.pt,
-        domainDefault: true,
       },
     ],
     detectBrowserLanguage: {
