@@ -26,5 +26,25 @@
   "search": {
     "title": "Search",
     "placeholder": "Type to search..."
-  }
+  },
+  "slides": {
+    "dynatriSoft": {
+      "title": "DynatriSoft",
+      "description": "Explore a world where technology and creativity meet to create games with captivating narratives and guaranteed immersion."
+    },
+    "bitwo": {
+      "title": "Bitwo",
+      "description": "We develop custom software solutions that meet the needs of modern businesses, focusing on innovation and practicality."
+    },
+    "granport": {
+      "title": "Granport",
+      "description": "Discover the finest luxury properties in exclusive areas of Portugal, connecting high-standard buyers and sellers."
+    },
+    "zephyrusFoundation": {
+      "title": "Zephyrus Foundation",
+      "description": "We support technological innovation and social causes, promoting freedom of expression and research and development for a better future."
+    },
+  },
+  "comingSoon": "Coming Soon",
+  "viewMore": "View More"
 }

@@ -131,6 +131,13 @@ export default defineNuxtConfig({
         language: 'pt-PT',
         file: 'pt-PT.json',
       },
+      {
+        code: 'br',
+        name: 'Português (BR)',
+        country: 'br',
+        language: 'pt-BR',
+        file: 'pt-BR.json',
+      },
     ],
     detectBrowserLanguage: {
       useCookie: true,

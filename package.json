@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@dargmuesli/nuxt-cookie-control": "^8.4.13",
+    "@dargmuesli/nuxt-cookie-control": "^8.4.14",
     "@nuxt/content": "^2.13.2",
     "@nuxt/image": "^1.8.1",
     "@nuxtjs/i18n": "^8.5.5",
@@ -20,9 +20,9 @@
     "nuxt-swiper": "^1.2.2",
     "vue": "latest",
     "vue-router": "latest",
-    "wrangler": "^3.80.0"
+    "wrangler": "^3.80.2"
   },
   "devDependencies": {
-    "daisyui": "^4.12.12"
+    "daisyui": "^4.12.13"
   }
 }

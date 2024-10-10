@@ -1,11 +1,11 @@
 {
   "app": {
-    "language": "Português"
+    "language": "Português (BR)"
   },
-  "welcome": "Bem-vindo a aplicação",
+  "welcome": "Bem-vindo ao App",
   "page": {
     "home": "Início",
-    "legal": "Legal",
+    "legal": "Jurídico",
     "company": "Informações da Empresa",
     "cookies": "Política de Cookies",
     "privacy": "Política de Privacidade",
@@ -14,7 +14,7 @@
   },
   "legal": {
     "title": "Documentos Legais",
-    "subtitle": "Consulte as nossas políticas de privacidade, termos de uso e outros documentos essenciais.",
+    "subtitle": "Consulte nossas políticas de privacidade, termos de serviço e outros documentos essenciais.",
     "readMore": "Leia mais"
   },
   "footer": {
@@ -24,25 +24,25 @@
     "privacyPolicy": "Política de Privacidade"
   },
   "search": {
-    "title": "Pesquisar",
-    "placeholder": "Digite para pesquisar..."
+    "title": "Buscar",
+    "placeholder": "Digite para buscar..."
   },
   "slides": {
     "dynatriSoft": {
-      "title": "DynatriSoft Games",
+      "title": "DynatriSoft",
       "description": "Explore um mundo onde tecnologia e criatividade se encontram para criar jogos com narrativas cativantes e imersão garantida."
     },
     "bitwo": {
       "title": "Bitwo",
-      "description": "Desenvolvemos soluções de software personalizadas que atendem às necessidades de empresas modernas, com foco em inovação e praticidade."
+      "description": "Desenvolvemos soluções de software personalizadas que atendem às necessidades de empresas modernas, focando em inovação e praticidade."
     },
     "granport": {
       "title": "Granport",
-      "description": "Descubra as melhores propriedades de luxo em zonas exclusivas de Portugal, conectando compradores e vendedores de alto padrão."
+      "description": "Descubra as melhores propriedades de luxo em áreas exclusivas de Portugal, conectando compradores e vendedores de alto padrão."
     },
     "zephyrusFoundation": {
       "title": "Zephyrus Foundation",
-      "description": "Apoiamos inovação tecnológica e causas sociais, promovendo liberdade de expressão e pesquisa e desenvolvimento para um futuro melhor."
+      "description": "Apoiamos inovação tecnológica e causas sociais, promovendo a liberdade de expressão e pesquisa e desenvolvimento para um futuro melhor."
     }
   },
   "comingSoon": "Em breve",
