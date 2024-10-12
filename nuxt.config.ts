@@ -152,9 +152,7 @@ export default defineNuxtConfig({
             pt: 'Preferências de cookies habilitadas',
           },
           targetCookieIds: ['zephyrus_ncc_e'],
-        }
-      ],
-      optional: [
+        },
         {
           description: {
             en: 'This cookie stores the cookies enabled preferences.',
@@ -171,8 +169,26 @@ export default defineNuxtConfig({
             pt: 'Preferências de cookies habilitadas',
           },
           targetCookieIds: ['zephyrus_i18n_redirected'],
+        },
+      ],
+      optional: [
+        {
+          description: {
+            en: 'This cookie stores the themes preference for this website.',
+            es: 'Esta cookie almacena las preferencias de temas para este sitio web.',
+            nl: 'Deze cookie slaat de themavoorkeuren voor deze website op.',
+            pt: 'Este cookie armazena as preferências de temas para este site.',
+          },
+          isPreselected: true,
+          id: 'zephyrus_theme',
+          name: {
+            en: 'Website theme Preferences',
+            es: 'Preferencias de temas del sitio web',
+            nl: 'Website themavoorkeuren',
+            pt: 'Preferências de temas do site',
+          },
+          targetCookieIds: ['zephyrus_theme'],
         }
-
       ],
     },
     cookieNameIsConsentGiven: 'zephyrus_ncc_c',
