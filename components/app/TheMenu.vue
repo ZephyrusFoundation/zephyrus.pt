@@ -22,13 +22,14 @@ const localePath = useLocalePath();
         </label>
       </div>
       <div class="navbar-center">
-        <a :href="localePath('/')" class="avatar w-12 h-12">
-          <div class="w-full h-full rounded">
-            <IconZephyrus class="w-full h-full" />
+        <a :href="localePath('/')" class="avatar w-12 h-12 bg-icon rounded-md">
+          <div class="w-full h-full p-1 rounded">
+            <IconZephyrus class="w-full h-full fill-icon-content rounded-md"/>
           </div>
         </a>
       </div>
       <div class="navbar-end">
+
         <DropdownLanguages />
         <ModalSearchInput />
       </div>

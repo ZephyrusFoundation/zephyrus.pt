@@ -18,9 +18,9 @@ const pages = usePages();
       <label for="zephyrus-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
       <ul class="bg-base-200 shadow-2xl min-h-full w-5/6 md:w-1/3 p-4">
         <div class="text-center">
-          <a :href="localePath('/')" class="avatar w-16 h-16">
+          <a :href="localePath('/')" class="avatar w-14 p-1 bg-icon rounded-md">
             <div class="w-full h-full rounded">
-              <IconZephyrus class="w-full h-full" />
+              <IconZephyrus class="w-full h-full fill-icon-content" />
             </div>
           </a>
         </div>

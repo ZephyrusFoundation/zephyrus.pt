@@ -19,8 +19,8 @@ const getYear = () => {
     <div class="bg-base-300 text-base-content">
       <div class="footer items-center p-4 container mx-auto">
         <aside class="flex flex-wrap justify-center text-center items-center">
-          <a :href="localePath('/')" class="avatar w-10 h-10 md:w-8 md:h-8">
-            <IconZephyrus giclass="w-full h-full" />
+          <a :href="localePath('/')" class="avatar w-10 h-10 md:w-8 md:h-8 bg-icon rounded-md">
+            <IconZephyrus class="w-full h-full fill-icon-content" />
           </a>
           <p>{{ t('footer.copyright', { year: getYear(), name: system.name }) }}</p>
         </aside>
