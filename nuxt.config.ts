@@ -55,7 +55,7 @@ export default defineNuxtConfig({
     cssPath: '~/assets/css/tailwind.css',
   },
   site: {
-    url: 'https://zephyrus.pt',
+    url: 'https://zephyrusprosperity.com',
     name: 'Zephyrus Prosperity',
     description: 'Welcome to my awesome site!',
     defaultLocale: 'en',
