@@ -179,7 +179,6 @@ export default defineNuxtConfig({
             nl: 'Deze cookie slaat de themavoorkeuren voor deze website op.',
             pt: 'Este cookie armazena as preferências de temas para este site.',
           },
-          isPreselected: true,
           id: 'zephyrus_theme',
           name: {
             en: 'Website theme Preferences',

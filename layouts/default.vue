@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import usePages from "~/composable/usePages";
-
+const { isModalActive } = useCookieControl();
 const { t } = useI18n();
 const localePath = useLocalePath();
 const pages = usePages();
@@ -25,14 +25,20 @@ const pages = usePages();
           </a>
         </div>
         <li v-for="page in pages" :key="page.path">
-          <a :href="localePath(page.path)" class="btn w-full" v-if="!page.hide && !page.hideMenu">
+          <a :href="localePath(page.path)" class="btn btn-primary w-full my-2" v-if="!page.hide && !page.hideMenu">
             {{ page.name }}
           </a>
         </li>
-        <div class="flex flex-wrap flex-col text-center md:flex-row md:justify-center md:gap-4 md:pt-12">
-          <a class="p-4 md:p-0" :href="localePath('/legal/tos')">{{ t('footer.termsOfUse') }}</a> <span class="hidden md:block">|</span>
-          <a class="p-4 md:p-0" :href="localePath('/legal/cookies')">{{ t('footer.cookiesPolicy') }}</a> <span class="hidden md:block">|</span>
-          <a class="p-4 md:p-0" :href="localePath('/legal/privacy')">{{ t('footer.privacyPolicy') }}</a>
+        <div class="divider divider-neutral md:pt-12 "></div>
+        <div class="flex flex-wrap flex-row justify-center gap-6">
+          <div class="text-center">
+            <a class="cursor-pointer" @click="isModalActive = true">{{ t('footer.cookies') }}</a>
+          </div>
+          <div class="flex flex-wrap flex-col text-center md:flex-row md:justify-center md:gap-4">
+            <a class="p-4 md:p-0" :href="localePath('/legal/tos')">{{ t('footer.termsOfUse') }}</a> <span class="hidden md:block">|</span>
+            <a class="p-4 md:p-0" :href="localePath('/legal/cookies')">{{ t('footer.cookiesPolicy') }}</a> <span class="hidden md:block">|</span>
+            <a class="p-4 md:p-0" :href="localePath('/legal/privacy')">{{ t('footer.privacyPolicy') }}</a>
+          </div>
         </div>
       </ul>
     </div>

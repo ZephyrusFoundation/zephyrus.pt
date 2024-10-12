@@ -1,10 +1,7 @@
 export const useThemeStore = defineStore('theme', () => {
     const AVAILABLE_THEMES = ['light', 'dark'];
     const { cookiesEnabledIds } = useCookieControl();
-    const themeCookie = cookiesEnabledIds?.value?.includes('zephyrus_theme')
-        ? useCookie('zephyrus_theme', { default: () => AVAILABLE_THEMES[0] })
-        : null;
-    const theme = ref(themeCookie?.value || AVAILABLE_THEMES[0]);
+    const theme = cookiesEnabledIds?.value?.includes('zephyrus_theme') ? useCookie('zephyrus_theme') : ref(AVAILABLE_THEMES[0]);
     const isDark = computed(() => theme.value === 'dark');
 
     function toggleTheme() {
@@ -16,9 +13,6 @@ export const useThemeStore = defineStore('theme', () => {
             newTheme = isDark.value ? 'light' : 'dark';
         }
         theme.value = newTheme;
-        if (cookiesEnabledIds?.value?.includes('zephyrus_theme')) {
-            themeCookie.value = newTheme;
-        }
         document.documentElement.setAttribute('data-theme', theme.value);
     }
 

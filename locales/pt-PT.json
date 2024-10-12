@@ -18,6 +18,7 @@
     "readMore": "Leia mais"
   },
   "footer": {
+    "cookies": "Gerir cookies",
     "copyright": "Copyright © { year } { name }. Todos os direitos reservados.",
     "termsOfUse": "Termos de Uso",
     "cookiesPolicy": "Política de Cookies",

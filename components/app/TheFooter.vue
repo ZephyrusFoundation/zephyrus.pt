@@ -3,6 +3,7 @@ import useSystem from "~/composable/useSystem";
 const { t } = useI18n();
 const system = useSystem();
 const localePath = useLocalePath();
+const { isModalActive } = useCookieControl();
 
 const getYear = () => {
   const foundationYear = new Date(system.value.foundation).getFullYear();
@@ -25,6 +26,7 @@ const getYear = () => {
           <p>{{ t('footer.copyright', { year: getYear(), name: system.name }) }}</p>
         </aside>
         <nav class="hidden md:flex md:gap-4 md:place-self-center md:justify-self-end">
+          <a @click="isModalActive = true" class="cursor-pointer">{{ t('footer.cookies') }}</a> |
           <a :href="localePath('/legal/tos')">{{ t('footer.termsOfUse') }}</a> |
           <a :href="localePath('/legal/cookies')">{{ t('footer.cookiesPolicy') }}</a> |
           <a :href="localePath('/legal/privacy')">{{ t('footer.privacyPolicy') }}</a>
