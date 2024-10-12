@@ -49,6 +49,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/i18n',
     '@dargmuesli/nuxt-cookie-control',
+    '@pinia/nuxt',
   ],
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
@@ -182,6 +183,11 @@ export default defineNuxtConfig({
       'es',
       'nl',
       'pt',
+    ],
+  },
+  pinia: {
+    storesDirs: [
+        './stores/**'
     ],
   },
 })

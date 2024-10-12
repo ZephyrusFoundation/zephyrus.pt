@@ -16,8 +16,10 @@
     "@nuxtjs/i18n": "^8.5.5",
     "@nuxtjs/seo": "^2.0.0-rc.23",
     "@nuxtjs/tailwindcss": "^6.12.1",
+    "@pinia/nuxt": "^0.5.5",
     "nuxt": "^3.13.2",
     "nuxt-swiper": "^1.2.2",
+    "pinia-plugin-persistedstate": "^4.1.1",
     "vue": "latest",
     "vue-router": "latest",
     "wrangler": "^3.80.2"
