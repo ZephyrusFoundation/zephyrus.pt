@@ -5,9 +5,9 @@ const themeStore = useThemeStore();
 </script>
 
 <template>
-  <div class="dropdown dropdown-end">
-    <div tabindex="0" role="button" class="btn m-1 uppercase">
-      {{ themeStore.theme }}
+  <div class="dropdown dropdown-end hidden md:inline-block">
+    <div tabindex="0" role="button" class="btn m-1 uppercase p-3">
+      <IconStack class="w-full h-full" />
     </div>
     <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
       <li v-for="theme in themeStore.AVAILABLE_THEMES" :key="theme" class="my-1">

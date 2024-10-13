@@ -12,7 +12,7 @@ const getLocale = (code: string) => {
 </script>
 
 <template>
-  <div class="dropdown dropdown-end">
+  <div class="dropdown dropdown-end hidden md:inline-block">
     <div tabindex="0" role="button" class="btn m-1">
       <IconFlagsGetFlag :code="getLocale(locale).country" />
     </div>

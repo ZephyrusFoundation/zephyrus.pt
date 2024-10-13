@@ -31,8 +31,8 @@ const pages = usePages();
         </li>
         <div class="divider divider-neutral md:pt-12 "></div>
         <div class="flex flex-wrap flex-row justify-center gap-6">
-          <div class="text-center">
-            <a class="cursor-pointer" @click="isModalActive = true">{{ t('footer.cookies') }}</a>
+          <div class="text-center w-full">
+            <button class="btn btn-accent w-full" @click="isModalActive = true">{{ t('footer.cookies') }}</button>
           </div>
           <div class="flex flex-wrap flex-col text-center md:flex-row md:justify-center md:gap-4">
             <a class="p-4 md:p-0" :href="localePath('/legal/tos')">{{ t('footer.termsOfUse') }}</a> <span class="hidden md:block">|</span>
