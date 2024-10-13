@@ -34,7 +34,10 @@ const pages = usePages();
           <div class="flex flex-wrap flex-row text-center w-full gap-2">
             <DropdownThemes :show-title="true" root-class="dropdown w-full" btn-class="btn btn-accent w-full" dropdown-class="dropdown-content menu bg-base-100 rounded-box z-[1] w-full p-2 shadow" icon-class="h-5 hidden lg:block" />
             <DropdownLanguages :show-title="true" root-class="dropdown w-full" btn-class="btn btn-accent w-full" dropdown-class="dropdown-content menu bg-base-100 rounded-box z-[1] w-full p-2 shadow" flag-class="h-5 hidden lg:block" />
-            <button class="btn btn-accent w-full" @click="isModalActive = true">{{ t('footer.cookies') }}</button>
+            <button class="btn btn-accent w-full" @click="isModalActive = true">
+              <IconCookies class="h-5 hidden lg:block" />
+              {{ t('footer.cookies') }}
+            </button>
           </div>
           <div class="flex flex-wrap flex-col text-center md:flex-row md:justify-center md:gap-4">
             <a class="p-4 md:p-0" :href="localePath('/legal/tos')">{{ t('footer.termsOfUse') }}</a> <span class="hidden md:block">|</span>
