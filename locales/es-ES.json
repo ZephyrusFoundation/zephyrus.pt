@@ -17,6 +17,10 @@
     "subtitle": "Consulte nuestras políticas de privacidad, términos de uso y otros documentos esenciales.",
     "readMore": "Leer más"
   },
+  "dropdown": {
+    "languages": "Seleccionar idioma",
+    "themes": "Seleccionar tema"
+  },
   "footer": {
     "cookies": "Gestionar cookies",
     "copyright": "Copyright © { year } { name }. Todos los derechos reservados.",

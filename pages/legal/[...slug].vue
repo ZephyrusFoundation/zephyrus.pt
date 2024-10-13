@@ -2,8 +2,9 @@
 const { locale } = useI18n();
 const router = useRouter();
 const slug = ref(router.currentRoute.value.params.slug);
-const path = `/${locale.value}/legal/${slug.value}` as string;
-console.log(path);
+const getLocale = computed(() => parseLocale(locale?.value));
+const path = `/${getLocale.value}/legal/${slug.value}` as string;
+console.log(path)
 </script>
 
 <template>

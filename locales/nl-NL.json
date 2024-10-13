@@ -17,6 +17,10 @@
     "subtitle": "Raadpleeg ons privacybeleid, onze gebruiksvoorwaarden en andere essentiële documenten.",
     "readMore": "Lees meer"
   },
+  "dropdown": {
+    "languages": "Selecteer taal",
+    "themes": "Selecteer thema"
+  },
   "footer": {
     "cookies": "Cookies beheren",
     "copyright": "Copyright © { year } { name }. Alle rechten voorbehouden.",

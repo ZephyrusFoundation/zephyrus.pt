@@ -17,7 +17,7 @@ const pages = usePages();
     <div class="drawer-side z-[99]">
       <label for="zephyrus-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
       <ul class="bg-base-200 shadow-2xl min-h-full w-5/6 md:w-1/3 p-4">
-        <div class="text-center">
+        <div class="text-center my-4">
           <a :href="localePath('/')" class="avatar w-14 p-1 bg-icon rounded-md">
             <div class="w-full h-full rounded">
               <IconZephyrus class="w-full h-full fill-icon-content" />
@@ -29,9 +29,11 @@ const pages = usePages();
             {{ page.name }}
           </a>
         </li>
-        <div class="divider divider-neutral md:pt-12 "></div>
+        <div class="divider divider-neutral md:mt-8"></div>
         <div class="flex flex-wrap flex-row justify-center gap-6">
-          <div class="text-center w-full">
+          <div class="flex flex-wrap flex-row text-center w-full gap-2">
+            <DropdownThemes :show-title="true" root-class="dropdown w-full" btn-class="btn btn-accent w-full" dropdown-class="dropdown-content menu bg-base-100 rounded-box z-[1] w-full p-2 shadow" icon-class="h-5 hidden lg:block" />
+            <DropdownLanguages :show-title="true" root-class="dropdown w-full" btn-class="btn btn-accent w-full" dropdown-class="dropdown-content menu bg-base-100 rounded-box z-[1] w-full p-2 shadow" flag-class="h-5 hidden lg:block" />
             <button class="btn btn-accent w-full" @click="isModalActive = true">{{ t('footer.cookies') }}</button>
           </div>
           <div class="flex flex-wrap flex-col text-center md:flex-row md:justify-center md:gap-4">

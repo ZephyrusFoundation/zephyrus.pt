@@ -17,6 +17,11 @@ const truncateText = (text?: string, maxLength: number = 100, maxWordLength: num
   return text;
 }
 
+
+const getLocale = computed(() => parseLocale(locale?.value));
+
+const path = `/${getLocale.value}/legal/${getLocale.value}` as string;
+
 const removeLanguage = (path?: string): string|null => {
   if (!path) return null;
   return path.replace(/^\/[a-z]{2}\//, '');
@@ -31,7 +36,7 @@ const removeLanguage = (path?: string): string|null => {
       <p class="text-lg text-gray-600">{{ t('legal.subtitle') }}</p>
     </section>
 
-    <LazyContentList :path="`/${locale}/legal`" v-slot="{ list }">
+    <LazyContentList :path="`/${getLocale}/legal`" v-slot="{ list }">
       <ul class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <li v-for="article in list" :key="article._path">
           <div class="card w-full h-full bg-base-200 shadow-xl hover:shadow-2xl transition-shadow duration-300 ease-in-out">
