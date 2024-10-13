@@ -32,10 +32,10 @@ const pages = usePages();
         <div class="divider divider-neutral md:mt-8"></div>
         <div class="flex flex-wrap flex-row justify-center gap-6">
           <div class="flex flex-wrap flex-row text-center w-full gap-2">
-            <DropdownThemes :show-title="true" root-class="dropdown w-full" btn-class="btn btn-accent w-full" dropdown-class="dropdown-content menu bg-base-100 rounded-box z-[1] w-full p-2 shadow" icon-class="h-5 hidden lg:block" />
+            <DropdownThemes :show-title="true" root-class="dropdown w-full" btn-class="btn btn-accent w-full" dropdown-class="dropdown-content menu bg-base-100 rounded-box z-[1] w-full p-2 shadow" icon-class="h-5 hidden lg:block fill-accent-content" />
             <DropdownLanguages :show-title="true" root-class="dropdown w-full" btn-class="btn btn-accent w-full" dropdown-class="dropdown-content menu bg-base-100 rounded-box z-[1] w-full p-2 shadow" flag-class="h-5 hidden lg:block" />
             <button class="btn btn-accent w-full" @click="isModalActive = true">
-              <IconCookies class="h-5 hidden lg:block" />
+              <IconCookies class="h-5 hidden lg:block fill-accent-content" />
               {{ t('footer.cookies') }}
             </button>
           </div>
